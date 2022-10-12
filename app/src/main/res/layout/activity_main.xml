@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/judul"
+            android:textSize="25dp"
+            android:text="BIODATA"
+            android:textColor="@color/black"
+            android:textAlignment="center"/>
+        <ImageView
+            android:id="@+id/foto"
+            android:paddingTop="@dimen/padding"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/judul"
+            android:src="@drawable/fotoku"/>
+        <TextView
+            android:id="@+id/nim"
+            android:paddingTop="@dimen/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="@string/nim"
+            android:textColor="@color/black"
+            android:layout_below="@+id/foto"/>
+        <TextView
+            android:id="@+id/nama"
+            android:paddingTop="@dimen/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="@string/nama"
+            android:layout_below="@+id/nim"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/hobi"
+            android:paddingTop="@dimen/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="@string/hobi"
+            android:layout_below="@+id/nama"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/deskripsi"
+            android:paddingTop="@dimen/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="@string/deskripsi"
+            android:layout_below="@+id/hobi"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/isi_deskripsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="@string/isi_deskripsi"
+            android:layout_below="@+id/deskripsi"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tv_alamat"
+            android:paddingTop="@dimen/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Alamat : "
+            android:layout_below="@+id/isi_deskripsi"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btn_alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_alamat"
+            android:backgroundTint="@color/black"
+            android:text="Klik untuk melihat alamat"
+            android:onClick="bukaLokasi" />
+        <TextView
+            android:id="@+id/tv_telp"
+            android:paddingTop="@dimen/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Nomor Telepon : "
+            android:layout_below="@+id/btn_alamat"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btn_telp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_telp"
+            android:backgroundTint="@color/black"
+            android:text="Klik untuk menelepon"
+            android:onClick="bukaTelepon"/>
+        <TextView
+            android:id="@+id/tv_email"
+            android:paddingTop="@dimen/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Email : "
+            android:layout_below="@+id/btn_telp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btn_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_email"
+            android:backgroundTint="@color/black"
+            android:text="Klik untuk mengirim email"
+            android:onClick="bukaEmail"/>
+    </RelativeLayout>
+</ScrollView>

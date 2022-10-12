@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppBiodataUTS</string>
+    <string name="nim">NIM : A11.2021.13790</string>
+    <string name="nama">Nama : Ardi Saputra</string>
+    <string name="hobi">Hobi : Main gitar</string>
+    <string name="deskripsi">Deskripsi :</string>
+    <string name="isi_deskripsi">Hai! Perkenalkan aku Ardi Saputra biasa dipanggil Ardi dan asal saya dari Pati, Jawa Tengah</string>
+
+</resources>
